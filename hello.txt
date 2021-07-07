@@ -1,0 +1,8 @@
+
+heell.txt :wq
+!:wq
+:wq
+yy
+wq
+!wq
+

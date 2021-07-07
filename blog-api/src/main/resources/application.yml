@@ -1,0 +1,36 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: Hjj-blog
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myblog?serverTimezone=Asia/Shanghai&userUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: a123456
+
+  redis:
+    host: 192.168.189.128
+    port: 6379
+    database: 0
+  servlet:
+    multipart:
+      max-file-size: 20MB
+
+
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix: ms_
+  mapper-locations: classpath*:com/hjj/dao/mapper/*.xml
+
+QiNiu:
+  accessKey: bs6couLa7tv7UzqD0uqBsH15xpyjIMEHfLlu0-C3
+  secretKey: Hw43-_VYyDKFFgTg43uD1BDje_RPrDqdF2Yl2X4E
+  bucket: hjj-qiniu
+
+
